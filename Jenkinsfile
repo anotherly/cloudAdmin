@@ -31,7 +31,7 @@ pipeline {
                 // 여기에 WAR 파일을 특정 위치로 이동하는 명령어 추가
                 sh 'echo Deploying the build'
 		dir('CloudAdmin') {
-			sh 'cp target/firstSamplePro-1.0.0.war /hivesystem/'
+			sh 'cp target/firstSamplePro-1.0.0.war /root/hivesystem/'
 		}
             }
         }
@@ -39,7 +39,7 @@ pipeline {
             steps {
                 script {
                     // 스크립트 실행
-                    sh '/hivesystem/sh/deploy_admin.sh'
+                    sh '/root/hivesystem/sh/deploy_admin.sh'
                 }
             }
         }
