@@ -15,8 +15,8 @@
 	<bean id="dataSource_main" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
 		<property name="driverClassName" value="org.mariadb.jdbc.Driver" />
 		<property name="url" value="jdbc:mariadb://192.168.1.36:3306/cloud_24_365?allowMultiQueries=true" />
-		<property name="username" value="root" />
-		<property name="password" value="root" />
+		<property name="username" value="hivesystem" />
+		<property name="password" value="qwe1212!Q" />
 		<property name="validationQuery" value="select 1 from dual" />
 		<property name="defaultAutoCommit" value="true" />
 		<property name="defaultReadOnly" value="false" />
